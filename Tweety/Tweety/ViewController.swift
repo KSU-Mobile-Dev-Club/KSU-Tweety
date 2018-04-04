@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import TwitterKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        KSUTweetyAPISharedInstance().getTwitterTweets { (success, error) in
+//            
+//        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
