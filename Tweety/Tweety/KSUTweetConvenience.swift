@@ -39,7 +39,7 @@ extension KSUTweetClient {
                         tweetAuthor = author
                 }
             }
-            var tweet = Tweet(ID: tweetID, text: tweetText, publisher: tweetAuthor)
+            let tweet = Tweet(ID: tweetID, text: tweetText, publisher: tweetAuthor)
             tweets.append(tweet)
         }
         return tweets

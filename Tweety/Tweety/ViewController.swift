@@ -9,22 +9,33 @@
 import UIKit
 import TwitterKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
+    var tweets: [Tweet] = []
     override func viewDidLoad() {
-        super.viewDidLoad()
-        KSUTweetyAPISharedInstance().getTwitterTweets { (success, error) in
-
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100
+        KSUTweetyAPISharedInstance().getTwitterTweets { (success, tweetsForDisplay) in
+            self.tweets = tweetsForDisplay
+            self.tableView.reloadData()
         }
-        // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBOutlet weak var TweetTable: UITableView!
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tweets.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TweetCell") as! TweetTableViewCell
+        cell.tweetText.text = tweets[indexPath.row].text
+        //cell.tweetLabel.text = tweets[indexPath.row].publisher
+        return cell
+    }
 }
 

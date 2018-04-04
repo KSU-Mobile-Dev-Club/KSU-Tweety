@@ -21,6 +21,7 @@
 		7F7BDEC520744EC200B74C3E /* KSUTweetConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BDEC420744EC200B74C3E /* KSUTweetConvenience.swift */; };
 		7F7BDEC72074618D00B74C3E /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BDEC62074618D00B74C3E /* Tweet.swift */; };
 		7F8F275020744C0600B4C30C /* KSUTweetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F274F20744C0600B4C30C /* KSUTweetClient.swift */; };
+		7F9F715B20757B6900EB7B7A /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9F715A20757B6900EB7B7A /* TweetTableViewCell.swift */; };
 		FB27CA29E50599B39E168399 /* Pods_TweetyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317C082484DB408536D7E4D /* Pods_TweetyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		7F7BDEC420744EC200B74C3E /* KSUTweetConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSUTweetConvenience.swift; sourceTree = "<group>"; };
 		7F7BDEC62074618D00B74C3E /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		7F8F274F20744C0600B4C30C /* KSUTweetClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSUTweetClient.swift; sourceTree = "<group>"; };
+		7F9F715A20757B6900EB7B7A /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		9655992748E038C1615618A3 /* Pods-TweetyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyTests/Pods-TweetyTests.release.xcconfig"; sourceTree = "<group>"; };
 		9BBA199ABB4C254DB2AD5318 /* Pods_Tweety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tweety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B97DDD517C9B07A4E2C626 /* Pods-Tweety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweety.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tweety/Pods-Tweety.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				7F6F8D1E205B50020082524B /* TwitterClient.swift */,
 				7F02A0462024E1B0004EAA16 /* ViewController.swift */,
 				7F02A0482024E1B0004EAA16 /* Main.storyboard */,
+				7F9F715A20757B6900EB7B7A /* TweetTableViewCell.swift */,
 				7F02A04B2024E1B0004EAA16 /* Assets.xcassets */,
 				7F02A04D2024E1B0004EAA16 /* LaunchScreen.storyboard */,
 				7F02A0502024E1B0004EAA16 /* Info.plist */,
@@ -487,6 +490,7 @@
 				7F8F275020744C0600B4C30C /* KSUTweetClient.swift in Sources */,
 				7F02A0452024E1B0004EAA16 /* AppDelegate.swift in Sources */,
 				7F7BDEC320744D3D00B74C3E /* KSUTweetConstants.swift in Sources */,
+				7F9F715B20757B6900EB7B7A /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
