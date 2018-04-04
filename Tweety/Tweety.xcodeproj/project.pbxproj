@@ -19,6 +19,7 @@
 		7F6F8D1F205B50020082524B /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6F8D1E205B50020082524B /* TwitterClient.swift */; };
 		7F7BDEC320744D3D00B74C3E /* KSUTweetConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BDEC220744D3D00B74C3E /* KSUTweetConstants.swift */; };
 		7F7BDEC520744EC200B74C3E /* KSUTweetConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BDEC420744EC200B74C3E /* KSUTweetConvenience.swift */; };
+		7F7BDEC72074618D00B74C3E /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7BDEC62074618D00B74C3E /* Tweet.swift */; };
 		7F8F275020744C0600B4C30C /* KSUTweetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F274F20744C0600B4C30C /* KSUTweetClient.swift */; };
 		FB27CA29E50599B39E168399 /* Pods_TweetyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317C082484DB408536D7E4D /* Pods_TweetyTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		7F6F8D1E205B50020082524B /* TwitterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
 		7F7BDEC220744D3D00B74C3E /* KSUTweetConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSUTweetConstants.swift; sourceTree = "<group>"; };
 		7F7BDEC420744EC200B74C3E /* KSUTweetConvenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSUTweetConvenience.swift; sourceTree = "<group>"; };
+		7F7BDEC62074618D00B74C3E /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		7F8F274F20744C0600B4C30C /* KSUTweetClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSUTweetClient.swift; sourceTree = "<group>"; };
 		9655992748E038C1615618A3 /* Pods-TweetyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyTests/Pods-TweetyTests.release.xcconfig"; sourceTree = "<group>"; };
 		9BBA199ABB4C254DB2AD5318 /* Pods_Tweety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tweety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,7 @@
 				7F02A0442024E1B0004EAA16 /* AppDelegate.swift */,
 				7F8F274F20744C0600B4C30C /* KSUTweetClient.swift */,
 				7F7BDEC420744EC200B74C3E /* KSUTweetConvenience.swift */,
+				7F7BDEC62074618D00B74C3E /* Tweet.swift */,
 				7F7BDEC220744D3D00B74C3E /* KSUTweetConstants.swift */,
 				7F6F8D1E205B50020082524B /* TwitterClient.swift */,
 				7F02A0462024E1B0004EAA16 /* ViewController.swift */,
@@ -480,6 +483,7 @@
 				7F02A0472024E1B0004EAA16 /* ViewController.swift in Sources */,
 				7F7BDEC520744EC200B74C3E /* KSUTweetConvenience.swift in Sources */,
 				7F6F8D1F205B50020082524B /* TwitterClient.swift in Sources */,
+				7F7BDEC72074618D00B74C3E /* Tweet.swift in Sources */,
 				7F8F275020744C0600B4C30C /* KSUTweetClient.swift in Sources */,
 				7F02A0452024E1B0004EAA16 /* AppDelegate.swift in Sources */,
 				7F7BDEC320744D3D00B74C3E /* KSUTweetConstants.swift in Sources */,
