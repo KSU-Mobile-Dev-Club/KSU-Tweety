@@ -34,7 +34,7 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TweetCell") as! TweetTableViewCell
         cell.tweetText.text = tweets[indexPath.row].text
-        //cell.tweetLabel.text = tweets[indexPath.row].publisher
+        cell.tweeter.text = tweets[indexPath.row].publisher
         return cell
     }
 }
