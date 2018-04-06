@@ -42,16 +42,11 @@ class ViewController: UITableViewController {
             if downloadedImages[indexPath.row] != nil {
                 cell.profileImage.image = downloadedImages[indexPath.row]
             } else {
-//                let url = URL(string: tweet.profileImageURL)
-//
-//                DispatchQueue.global().async {
-//                    let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-//                    DispatchQueue.main.async {
-//                        cell.profileImage.image = UIImage(data: data!)
-//                    }
-//                }
                 getImageFromWeb(tweet.profileImageURL, closure: { (image) in
                     cell.profileImage.image = image
+                    if image != nil {
+                        self.downloadedImages[indexPath.row] = image
+                    }
                 })
             }
         }
