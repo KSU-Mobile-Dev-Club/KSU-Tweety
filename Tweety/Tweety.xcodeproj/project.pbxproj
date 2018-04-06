@@ -23,6 +23,7 @@
 		7F8F275020744C0600B4C30C /* KSUTweetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8F274F20744C0600B4C30C /* KSUTweetClient.swift */; };
 		7F9F715B20757B6900EB7B7A /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9F715A20757B6900EB7B7A /* TweetTableViewCell.swift */; };
 		7F9F715D2077081A00EB7B7A /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9F715C2077081A00EB7B7A /* ImageViewExtension.swift */; };
+		7F9F715F20770F0000EB7B7A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9F715E20770F0000EB7B7A /* DetailViewController.swift */; };
 		FB27CA29E50599B39E168399 /* Pods_TweetyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317C082484DB408536D7E4D /* Pods_TweetyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		7F8F274F20744C0600B4C30C /* KSUTweetClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSUTweetClient.swift; sourceTree = "<group>"; };
 		7F9F715A20757B6900EB7B7A /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		7F9F715C2077081A00EB7B7A /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
+		7F9F715E20770F0000EB7B7A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9655992748E038C1615618A3 /* Pods-TweetyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TweetyTests/Pods-TweetyTests.release.xcconfig"; sourceTree = "<group>"; };
 		9BBA199ABB4C254DB2AD5318 /* Pods_Tweety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tweety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B97DDD517C9B07A4E2C626 /* Pods-Tweety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tweety.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tweety/Pods-Tweety.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				7F02A0462024E1B0004EAA16 /* ViewController.swift */,
 				7F9F715C2077081A00EB7B7A /* ImageViewExtension.swift */,
 				7F02A0482024E1B0004EAA16 /* Main.storyboard */,
+				7F9F715E20770F0000EB7B7A /* DetailViewController.swift */,
 				7F9F715A20757B6900EB7B7A /* TweetTableViewCell.swift */,
 				7F02A04B2024E1B0004EAA16 /* Assets.xcassets */,
 				7F02A04D2024E1B0004EAA16 /* LaunchScreen.storyboard */,
@@ -493,6 +496,7 @@
 				7F9F715D2077081A00EB7B7A /* ImageViewExtension.swift in Sources */,
 				7F8F275020744C0600B4C30C /* KSUTweetClient.swift in Sources */,
 				7F02A0452024E1B0004EAA16 /* AppDelegate.swift in Sources */,
+				7F9F715F20770F0000EB7B7A /* DetailViewController.swift in Sources */,
 				7F7BDEC320744D3D00B74C3E /* KSUTweetConstants.swift in Sources */,
 				7F9F715B20757B6900EB7B7A /* TweetTableViewCell.swift in Sources */,
 			);

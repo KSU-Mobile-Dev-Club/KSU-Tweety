@@ -12,6 +12,7 @@ import TwitterKit
 class ViewController: UITableViewController {
     var downloadedImages: [Int:UIImage] = [:]
     var tweets: [Tweet] = []
+    var tweetIndexSelected: Int = 0
     override func viewDidLoad() {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
@@ -74,6 +75,23 @@ class ViewController: UITableViewController {
                 closure(UIImage(data: data!))
             }
         }; task.resume()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tweetIndexSelected = indexPath.row
+//        self.navigationController?.performSegue(withIdentifier: "DetailSegue", sender: self)
+        self.performSegue(withIdentifier: "DetailSegue", sender: self)
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var vc = segue.destination as! DetailViewController
+        var tweet = tweets[tweetIndexSelected]
+        if (downloadedImages[tweetIndexSelected] != nil) {
+            vc.image1 =  downloadedImages[tweetIndexSelected]
+        }
+        vc.publisher1 = tweet.publisher
+        vc.text1 = tweet.text
     }
 }
 
