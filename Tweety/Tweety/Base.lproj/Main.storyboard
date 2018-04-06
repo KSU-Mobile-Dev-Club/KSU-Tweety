@@ -91,6 +91,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="favoritesCount" destination="IEk-oX-lCH" id="9mK-E4-Vi3"/>
+                                    <outlet property="profileImage" destination="jME-Bw-zuP" id="HfV-jz-VBd"/>
                                     <outlet property="retweetCount" destination="nGT-lt-tEc" id="OTF-9a-0bB"/>
                                     <outlet property="tweetText" destination="59d-Eq-H5a" id="oIY-oo-Wrz"/>
                                     <outlet property="tweeter" destination="10p-oe-Sgn" id="N6S-1R-Jw7"/>

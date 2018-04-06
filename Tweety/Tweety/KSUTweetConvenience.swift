@@ -40,12 +40,16 @@ extension KSUTweetClient {
                 return []
             }
             var tweetAuthor = "Uknown"
+            var profileImageURL = ""
             if let tweetEntitity = tweetAnyObject["user"] as? [String:AnyObject] {
                 if let author = tweetEntitity["name"] as? String {
                         tweetAuthor = author
                 }
+                if let profileImageUrl = tweetEntitity["profile_image_url"] as? String {
+                    profileImageURL = profileImageUrl
+                }
             }
-            let tweet = Tweet(ID: tweetID, text: tweetText, publisher: tweetAuthor, retweetCount: tweetRetweetCount, favoriteCount: tweetFavoriteCount)
+            let tweet = Tweet(ID: tweetID, text: tweetText, publisher: tweetAuthor, retweetCount: tweetRetweetCount, favoriteCount: tweetFavoriteCount, profileImageURL: profileImageURL)
             tweets.append(tweet)
         }
         return tweets

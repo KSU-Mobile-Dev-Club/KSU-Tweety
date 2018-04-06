@@ -14,4 +14,5 @@ struct Tweet {
     var publisher: String
     var retweetCount: Int
     var favoriteCount: Int
+    var profileImageURL: String
 }
