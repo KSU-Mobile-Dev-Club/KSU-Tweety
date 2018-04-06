@@ -33,13 +33,19 @@ extension KSUTweetClient {
             guard let tweetText = tweetAnyObject["text"] as? String else {
                 return []
             }
+            guard let tweetFavoriteCount = tweetAnyObject["favorite_count"] as? Int else {
+                return []
+            }
+            guard let tweetRetweetCount = tweetAnyObject["retweet_count"] as? Int else {
+                return []
+            }
             var tweetAuthor = "Uknown"
             if let tweetEntitity = tweetAnyObject["user"] as? [String:AnyObject] {
                 if let author = tweetEntitity["name"] as? String {
                         tweetAuthor = author
                 }
             }
-            let tweet = Tweet(ID: tweetID, text: tweetText, publisher: tweetAuthor)
+            let tweet = Tweet(ID: tweetID, text: tweetText, publisher: tweetAuthor, retweetCount: tweetRetweetCount, favoriteCount: tweetFavoriteCount)
             tweets.append(tweet)
         }
         return tweets

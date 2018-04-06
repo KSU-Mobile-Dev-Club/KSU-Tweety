@@ -35,6 +35,8 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TweetCell") as! TweetTableViewCell
         cell.tweetText.text = tweets[indexPath.row].text
         cell.tweeter.text = tweets[indexPath.row].publisher
+        cell.favoritesCount.text = String(tweets[indexPath.row].favoriteCount)
+        cell.retweetCount.text = String(tweets[indexPath.row].retweetCount)
         return cell
     }
 }

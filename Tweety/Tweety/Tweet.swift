@@ -12,4 +12,6 @@ struct Tweet {
     var ID: Int
     var text: String
     var publisher: String
+    var retweetCount: Int
+    var favoriteCount: Int
 }
